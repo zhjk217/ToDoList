@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/style.css"> 
+    <!--style  style in folder-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--bootstraps   CSS Library-->
+    
+</head>
+
+<body>
+    <div class="container border bg-light">
+    <!--container 容器 -->
+    <!--border 邊框 -->
+    <!--bg 背景- 顏色 -->
+        <!---標題--->
+        <div class="row">  
+        <!--row 行-->
+        <!--col-sm 列--> 
+            <div class="col-sm">
+                <h1 class="text-center">TodoList</h1>
+                <!--text-center 標題文字 中心 -->
+            </div>
+        </div>
+        <!---標題--->
+        <!---內容--->
+        <div class="row justify-content-center">
+        <!--justify-content-center 內容文字 中心 -->
+            <div class="col-sm-5">
+            <!--col-sm 列- 大小 -->
+                <div class="input-group mb-3">
+                <!--input-group 輸入組 外圈 -->
+                <!--mb 往下-->
+                    <div class="input-group-prepend">
+                    <!--prepend 內圈-->
+                        <span class="input-group-text" id="basic-addon1">標題</span>
+                    </div>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="標題">
+                    <!-- form-control 輸入欄位-->
+                    <!-- placeholder 欄位-->
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon2">內容</span>
+                    </div>
+                    <input type="text" class="form-control" id="msg" name="msg" placeholder="輸入待辦事項">
+                </div>
+                <div class="row m-3 justify-content-center">
+                    <div class="col-sm-1">
+                        <input type="button" class="btn btn-outline-primary" value="確認" onclick="addList()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---內容--->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--jquery  Javascript Library-->
+    <script src="javascripts/todolist.js"></script>
+    <!--todolist  Javascript In Folder-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!--bootstraps  Javascript Library-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!--popper  tooltips-->
+</body>
+
+</html>
+
+
